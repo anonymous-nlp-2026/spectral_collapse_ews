@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pt
+*.bin
+*.safetensors
+data/
+checkpoints/
+checkpoints_phase1/
+checkpoints_phase1_1b/
+checkpoints_phase1_gpt2m/
+wandb/
+logs/
+*.log
+.env
+models/
+results/
+*.egg-info/
