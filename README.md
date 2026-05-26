@@ -1,4 +1,4 @@
-# Spectral Early Warning Signals for Model Collapse in Recursive Synthetic Training
+# Spectral Early Warning Signals for Model Collapse and Their Prevention–Detectability Tradeoff
 
 Code for tracking spectral properties of language model representations across recursive self-training generations to detect and characterize model collapse.
 
@@ -37,7 +37,7 @@ Tokenize a 50K-sample subset for training and 1K for spectral evaluation:
 python prepare_data.py
 ```
 
-### Step 2: Pure collapse baseline (Table 1, Figure 1)
+### Step 2: Pure collapse baseline (Table 2, Figure 1)
 
 Run 10-generation recursive training under pure synthetic data:
 
