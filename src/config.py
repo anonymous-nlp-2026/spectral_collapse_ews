@@ -43,7 +43,7 @@ class Config:
     real_data_ratio: float = 0.0
 
     # SpectralController params (used when real_data_ratio < 0)
-    controller_k: float = 20.0
+    controller_k: float = 10.0
     controller_tau: float = 0.002
     controller_r_min: float = 0.20
     controller_r_max: float = 0.80

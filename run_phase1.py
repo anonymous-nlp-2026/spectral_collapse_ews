@@ -76,14 +76,14 @@ def parse_args():
                         choices=CONDITION_CHOICES,
                         help="pure_collapse | fixed_mix | linear_increasing | adaptive")
     parser.add_argument("--seed", type=int, required=True,
-                        help="Random seed (42 / 123 / 7)")
+                        help="Random seed (42 / 43 / 44)")
     parser.add_argument("--signal", type=str, default="log_det",
                         choices=["log_det", "eff_rank"],
                         help="Spectral signal for controller (adaptive only, default: log_det)")
     parser.add_argument("--tau", type=float, default=0.002,
-                        help="Spectral decline threshold (adaptive only, default: 0.005)")
-    parser.add_argument("--k", type=float, default=20.0,
-                        help="Control gain (adaptive only, default: 1.0)")
+                        help="Spectral decline threshold (adaptive only, default: 0.002)")
+    parser.add_argument("--k", type=float, default=10.0,
+                        help="Control gain (adaptive only, default: 10.0)")
     parser.add_argument("--signal_mode", type=str, default="per_gen",
                         choices=["per_gen", "cumulative"],
                         help="Signal delta mode (adaptive only, default: per_gen)")

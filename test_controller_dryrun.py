@@ -18,7 +18,7 @@ phase0_data = [
     {"generation": 8, "effective_rank": 456.756, "log_det": 2252.119},
 ]
 
-# Controller params: tau=0.002, k=20.0, r_min=0.2, r_max=0.8, signal=log_det
+# Controller params: tau=0.002, k=10.0, r_min=0.2, r_max=0.8, signal=log_det
 # total_budget = T * r_base = 10 * 0.5 = 5.0
 T = 10
 controller = SpectralController(
@@ -27,7 +27,7 @@ controller = SpectralController(
     r_base=0.50,
     r_min=0.20,
     r_max=0.80,
-    k=20.0,
+    k=10.0,
     tau=0.002,
     alpha_ema=0.5,
     signal="log_det",

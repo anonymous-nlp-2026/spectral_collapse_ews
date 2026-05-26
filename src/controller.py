@@ -12,7 +12,7 @@ signal_mode:
 class SpectralController:
 
     def __init__(self, total_budget, total_generations, r_base=0.50,
-                 r_min=0.20, r_max=0.80, k=20.0, tau=0.002, alpha_ema=0.5,
+                 r_min=0.20, r_max=0.80, k=10.0, tau=0.002, alpha_ema=0.5,
                  signal="log_det", signal_mode="per_gen"):
         self.B_rem = total_budget
         self.T = total_generations

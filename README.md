@@ -1,6 +1,6 @@
 # Spectral Early Warning Signals for Model Collapse and Their Prevention–Detectability Tradeoff
 
-Code for tracking spectral properties of language model representations across recursive self-training generations to detect and characterize model collapse.
+Code for characterizing spectral dynamics of language model representations across recursive synthetic training generations, revealing a three-phase collapse pattern and a prevention–detectability tradeoff where real-data mixing suppresses the spectral signal it relies on.
 
 ## Requirements
 

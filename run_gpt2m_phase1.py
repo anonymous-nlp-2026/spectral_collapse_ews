@@ -50,7 +50,7 @@ def parse_args():
     parser.add_argument("--signal", type=str, default="log_det",
                         choices=["log_det", "eff_rank"])
     parser.add_argument("--tau", type=float, default=0.002)
-    parser.add_argument("--k", type=float, default=20.0)
+    parser.add_argument("--k", type=float, default=10.0)
     parser.add_argument("--signal_mode", type=str, default="per_gen",
                         choices=["per_gen", "cumulative"])
     parser.add_argument("--r_min", type=float, default=0.20)
